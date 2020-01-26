@@ -2,7 +2,6 @@ package ru.lember.ConsistencyValidator.cache;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import ru.lember.ConsistencyValidator.entity.Account;
 import ru.lember.ConsistencyValidator.entity.Organization;
 import ru.lember.ConsistencyValidator.entity.Role;
@@ -12,8 +11,10 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.math.BigDecimal;
 
+/**
+ * Кэш, который используется для тестовых целей (наполнение сущностями).
+ */
 @Slf4j
-@Component
 public class CacheFiller {
 
     @Autowired
